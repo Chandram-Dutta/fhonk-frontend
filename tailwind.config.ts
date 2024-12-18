@@ -3,10 +3,12 @@ import type { Config } from 'tailwindcss';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				custom: ['Technor-Black', 'sans-serif']
+			}
+		}
 	},
-
 	plugins: [typography]
 } satisfies Config;
